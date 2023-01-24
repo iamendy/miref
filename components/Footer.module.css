@@ -1,0 +1,36 @@
+.footerWrapper{
+    @apply mt-10 mb-10
+    ;
+}
+
+.link{
+    @apply font-light text-gray block my-3 mb-3;
+}
+.outro{
+    @apply text-gray font-medium text-sm space-y-3
+    xl:flex-[3];
+}
+
+.links{
+    @apply grid grid-cols-2 gap-3 text-gray text-sm mt-10 mb-10
+    md:grid-cols-4
+    xl:flex-[6];
+}
+
+.social{
+    @apply flex mb-3
+    sm:order-2;;
+}
+
+.social a{
+    @apply mr-5 w-5 h-6
+}
+
+.hr{
+    @apply border-light-primary;
+}
+
+.copyright{
+    @apply font-light text-xs text-gray
+    sm:order-1;
+}

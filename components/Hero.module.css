@@ -1,0 +1,60 @@
+.hero{
+    @apply mt-20 mb-20 text-white
+    lg:mt-20 lg:mb-0
+    xl:mt-28;
+}
+
+.title{
+    @apply font-bold leading-[44px] text-black relative
+    text-3xl mt-10 mb-5 text-center tracking-tight
+    sm:w-[70%] sm:mx-auto
+    md:pl-9 md:pr-9 text-4xl
+    lg:w-[60%] lg:font-bold lg:text-5xl lg:leading-[60px]
+    xl:text-[5rem] xl:leading-[80px] tracking-tight xl:px-[1rem];
+}
+
+.title::after{
+    content: '';
+    position: absolute;
+    background: rgba(117, 72, 242, 0.25);
+    filter: blur(96px);
+    height: 100px;
+    width: 100px;
+    top: 0;
+    left: -70px;
+}
+
+.title::before{
+    @apply hidden md:block;
+    content: url("/img/arrow.svg");
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: 0;
+    right: -70px;
+}
+
+.subtext{
+    @apply font-light text-gray leading-[30px] text-center text-lg
+    sm:w-[80%] sm:mx-auto
+    md:w-[70%]
+    lg:w-[60%]
+    xl:px-20;
+}
+
+.getStarted{
+    @apply mt-10 mb-10 py-4 px-5 w-full bg-primary w-full rounded-lg block text-center
+    sm:hidden;
+}
+
+.macbook{
+    @apply mt-20 mb-20 flex items-center justify-center
+    sm:hidden;
+}
+
+.bigMacbook{
+    @apply hidden
+    sm:block mt-14 mb-0
+    md:w-[80%] mx-auto
+    lg:mt-[70px];
+}

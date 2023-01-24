@@ -1,0 +1,48 @@
+.newsletterWrapper{
+    @apply mt-10 mb-10
+    xl:mt-24 xl:mb-24;
+}
+
+.newsletter{
+    @apply bg-primary rounded-lg px-9 py-16 space-y-6
+    sm:py-12
+    xl:py-16 rounded-xl;
+}
+
+.title{
+    @apply font-medium text-white leading-[30px] text-2xl mb-5
+    sm:text-center
+    xl:text-3xl;
+}
+
+.subtext{
+    @apply text-gray text-primary-200 text-sm
+    sm:text-center;
+}
+
+.form{
+    @apply space-y-4
+    sm:w-[70%] sm:mx-auto
+    md:flex md:w-[90%] md:gap-1 md:space-y-0
+    xl:w-[60%];
+}
+
+.input{
+    @apply bg-white w-full p-3 rounded-lg text-primary
+    lg:flex-[2];
+}
+
+.input::placeholder{
+    @apply text-primary-200;
+}
+
+.input:focus{
+    outline: none;
+    border: none;
+    @apply text-primary;
+}
+
+.subBtn{
+    @apply text-primary bg-[#DBCFFC] w-full block py-3 px-3 text-center rounded-lg text-sm cursor-pointer
+    lg:flex-[1];
+}

@@ -1,0 +1,47 @@
+.bizWrapper{
+    @apply relative mt-16 mb-16
+    md:mt-5 md:mb-10;
+}
+
+.bizWrapper::after{
+    content: '';
+    position: absolute;
+    background: rgba(117, 72, 242, 0.25);
+    filter: blur(96px);
+    height: 100px;
+    width: 100px;
+    top: 50%;
+    left: 0;
+}
+
+.business{
+    @apply flex flex-col
+    md:flex-row md:items-center justify-between;
+}
+
+.left{
+    @apply md:p-3 md:px-6
+    md:order-2;
+}
+
+.right{
+    @apply mt-10
+    md:order-1
+    2xl:px-10;
+}
+
+.title{
+    @apply text-black text-lg font-medium mb-3 mt-4;
+}
+
+.subtext{
+    @apply text-gray font-light;
+}
+
+.checks{
+    @apply pl-5 font-light text-gray;
+}
+
+.dash{
+    box-shadow: 0 32px 64px -12px rgba(16, 24, 40, 0.2);
+}

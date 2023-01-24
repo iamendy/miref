@@ -1,0 +1,49 @@
+.navbar{
+    @apply flex justify-between items-center relative py-5
+}
+
+.getStarted{
+    @apply hidden bg-primary text-white px-5 py-3 text-xs rounded-sm text-white text-center
+    sm:block mr-9
+    md:mr-0
+    xl:px-6 xl:py-4 xl:rounded-lg
+    lg:text-lg;
+}
+
+.mobileMenu{
+    @apply opacity-0 z-30 absolute inset-0 min-h-screen w-full bg-primary flex flex-col items-center justify-center ;
+}
+
+.mobileMenuItems{
+    @apply flex flex-col justify-center items-center text-center text-white;
+}
+
+.mobileMenuItem{
+    @apply p-5 flex-1 mb-4 hover:bg-white hover:text-primary transition transition-colors;
+    min-width: 200px;
+}
+
+.getStartedMobile{
+    @apply bg-white px-5 py-4 rounded-sm text-primary text-center;
+    min-width: 200px;
+}
+
+.bigMenuItems{
+    @apply hidden text-gray
+    md:flex md:justify-center md:items-center md:text-xs
+    lg:text-sm;
+}
+
+.bigMenuItem{
+    @apply mr-6 md:hover:text-primary
+    xl:mr-8 xl:text-lg;
+}
+
+.close{
+    @apply w-9 h-9 absolute top-6 right-5 text-white;
+}
+
+.open{
+    @apply w-6 h-6
+    md:hidden;
+}
